@@ -57,7 +57,23 @@
     
 }
 /* Ipad mini */
+/* (max-width: 1023px) */
+@media (min-width: 1300px) {
+    .contect-main_img-pc{
+        display: block;
+    }
+    .contect-main_img-mobile{
+        display: none;
+    }
+    .content-fact_item{
+        width: 50%;
+    }
+}
 @media (max-width: 1023px){
+    /* .app{
+        margin: 0 auto;
+        overflow: hidden;
+    } */
     .header-app{
         margin: 5px 8px 0 8px;
         align-self: center;
@@ -82,12 +98,18 @@
         padding-right: 0;
     }
     .content-main_between-imgg {
-        transform-origin: 13cm;
+        transform-origin: 14cm;
+        transform: scale(0.3);
+        /* transform-origin: 23cm; */
+
     }
     .content-main_between-textt {
         padding: 0;  
-        transform: translateX(-250px);
+        /* transform: translateX(-250px); */
+        transform: translateX(-340px);
+
     }
+    
     .footer-contact{
         padding-right: 0;
         padding-left: 60px;
@@ -119,6 +141,13 @@
     }
     .header-btn{
         margin-top: 3px;
+        opacity: 0.9;
+        box-shadow: 0px 0px 10px 1px rgb(245, 187, 225);
+    }
+    .header-text_btn:hover{
+        cursor: pointer;
+        opacity: 0.8;
+        box-shadow:  2px 5px rgba(33, 33, 33, 0.05);
     }
     .header-text {
         padding: 100px 28px 0;
@@ -239,6 +268,8 @@
     }
     .footer-contact_text{
         font-size: 17px;
+        color: #fff;
+        text-decoration: none;
     }
     .footer-section{
        padding: 0;
